@@ -12,11 +12,11 @@ OUTPUT_AUDIO = Path(__file__).resolve().parent.parent.joinpath('data', 'podcast.
 
 def download_youtube_video(url, output_audio):
     # youtube video object
-    youtube_video = YouTube(YOUTUBE_VIDEO_URL)
+    youtube_video = YouTube(url)
     streams = youtube_video.streams.filter(only_audio=True)
     # taking first object of lowest quality
     stream = streams.first()
-    stream.download(filename=OUTPUT_AUDIO)
+    stream.download(filename=output_audio)
 
 def summarize_text(transcript):
     #
