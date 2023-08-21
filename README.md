@@ -6,7 +6,7 @@ This Python script allows you to summarize YouTube videos using OpenAI's Whisper
 
 Before you begin, make sure you have the necessary Python libraries and an OpenAI API key:
 
-- Python (>=3.6)
+- Python (>=3.8)
 - `whisper` library (for audio transcription)
 - `openai` library (for GPT)
 - `pytube` library (for downloading YouTube videos)
